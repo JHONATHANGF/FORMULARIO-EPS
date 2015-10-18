@@ -1,0 +1,29 @@
+﻿body {
+   background-color:black;
+}
+h1{
+    font-family:inherit;
+    font-size: 66px;
+    color:#ffffff;
+}
+a{
+    font-size: 26px;
+    color:#940404;
+}
+h4{
+    font-size: 30px;
+}
+span{
+    font-size: 20px;
+    color:#000000;
+}
+#btnmodal{
+     border: solid 2px #808080;
+     box-shadow: 1px 1px 20px 5px #808080;
+     font-size: 20px;
+}
+p{
+    color:#ffffff;
+    font-family:inherit;
+    font-size: 10px;
+}

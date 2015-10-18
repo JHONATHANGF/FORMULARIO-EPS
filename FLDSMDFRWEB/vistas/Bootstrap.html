@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../bootstrap/src/css/bootstrapValidator.min.css" rel="stylesheet"/>
+    <script src="../bootstrap/js/jquery-1.11.3.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../bootstrap/src/js/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/Validator.js"></script>
+    <link rel="stylesheet" href="../bootstrap/src/css/bootstrap-datetimepicker.min.css" />
+    <script src="../bootstrap/src/js/moment.min.js"></script>
+    <script src="../bootstrap/src/js/bootstrap-datetimepicker.js"></script>
+
+    <title></title>
+</head>
+<body>
+    <div id="Titformu" class="col-md-8 col-md-offset-2" align="center">
+        <h1>FORMULARIO E.P.S.</h1>
+        <a href="http://getbootstrap.com/">¡¡Realizado con Bootstrap!!</a>
+        <br />
+        <br />
+    </div>
+    <div class="btnModal" align="center" style="margin:500px;">
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#BootstrapModal" id="btnmodal">
+            <span class="glyphicon glyphicon-arrow-left"></span>
+            IR AL FORMULARIO
+            <span class=" glyphicon glyphicon-arrow-right"></span>
+        </button>
+        <br />
+        <br />
+        <br />
+        <p>Realizado por jhonathan García.Todos los derechos reservados.</p>
+    </div>
+  
+    <div class="modal fade" id="BootstrapModal" tabindex="-1" role="dialog" aria-labelledby="BootstrapModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div align="center" class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">FORMULARIO DE E.P.S.</h4>
+                </div>
+
+                <div class="modal-body">
+
+                    <form id="FormWeb" method="post" class="form-horizontal" action="none">
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Nombre:</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control" name="nombre" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Apellido</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control" name="apellido" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Fecha de nacimiento:</label>
+                            <div class="col-md-7">
+                                <input type="date" class="form-control" name="FDN" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Lugar de nacimiento:</label>
+                            <div class="col-md-7">
+                                <select class="form-control" name="listaDeLugarN">
+                                    <option></option>
+                                    <option>Bogotá D.C.</option>
+                                    <option>Medellin</option>
+                                    <option>Barranquilla</option>
+                                    <option>Tolima</option>
+                                    <option>Cali</option>
+                                    <option>Manizales</option>
+                                    <option>Cartagena</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Tipo de documento:</label>
+                            <div class="col-md-7">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="TD" value="cc" /> C.C.
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="TD" value="ti" /> T.I.
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Documento:</label>
+                            <div class="col-md-7">
+                                <input type="number" class="form-control" name="documento" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Fecha de expedición:</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control" name="fechExpedicion" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Lugar de expedición:</label>
+                            <div class="col-md-7">
+                                <select class="form-control" name="listaDeLugarExp">
+                                    <option></option>
+                                    <option>Bogotá D.C.</option>
+                                    <option>Medellin</option>
+                                    <option>Barranquilla</option>
+                                    <option>Tolima</option>
+                                    <option>Cali</option>
+                                    <option>Manizales</option>
+                                    <option>Cartagena</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Ciudad donde habita:</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control" name="Ciudhabit" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Localidad:</label>
+                            <div class="col-md-7">
+                                <select class="form-control" name="Local">
+                                    <option></option>
+                                    <option>Si vive en Bogotá:-----------</option>
+                                    <option>Bogotá, D.C. - 01 Localidad - Usaquén</option>
+                                    <option>Bogotá, D.C. - 02 Localidad - Chapinero</option>
+                                    <option>Bogotá, D.C. - 03 Localidad - Santa Fe</option>
+                                    <option>Bogotá, D.C. - 04 Localidad - San Cristóbal</option>
+                                    <option>Bogotá, D.C. - 05 Localidad - Usme</option>
+                                    <option>Bogotá, D.C. - 06 Localidad - Tunjuelito</option>
+                                    <option>Bogotá, D.C. - 07 Localidad - Bosa</option>
+                                    <option>Bogotá, D.C. - 08 Localidad - Kennedy</option>
+                                    <option>Bogotá, D.C. - 09 Localidad - Fontibón</option>
+                                    <option>Bogotá, D.C. - 10 Localidad - Engativá</option>
+                                    <option>Bogotá, D.C. - 11 Localidad - Suba</option>
+                                    <option>Bogotá, D.C. - 12 Localidad - Barrios Unidos</option>
+                                    <option>Bogotá, D.C. - 13 Localidad - Teusaquillo</option>
+                                    <option>Bogotá, D.C. - 14 Localidad - Los Mártires</option>
+                                    <option>Bogotá, D.C. - 15 Localidad - Antonio Nariño</option>
+                                    <option>Bogotá, D.C. - 16 Localidad - Puente Aranda</option>
+                                    <option>Bogotá, D.C. - 17 Localidad - La Candelaria</option>
+                                    <option>Bogotá, D.C. - 18 Localidad - Rafael Uribe Uribe</option>
+                                    <option>Bogotá, D.C. - 19 Localidad - Ciudad Bolívar</option>
+                                    <option>Bogotá, D.C. - 20 Localidad - Sumapaz</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Barrio:</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control" name="barr" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Dirección:</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control" name="dir" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Teléfono:</label>
+                            <div class="col-md-7">
+                                <input type="number" class="form-control" name="tel" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Celular:</label>
+                            <div class="col-md-7">
+                                <input type="number" class="form-control" name="cel" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Correo:</label>
+                            <div class="col-md-7">
+                                <input type="email" class="form-control" name="correo" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">RH:</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control" name="RH" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Tipo de vinculación:</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control" name="vincu" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Estracto:</label>
+                            <div class="col-md-7">
+                                <select class="form-control" name="estr">
+                                    <option></option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <label class="col-md-3 control-label" for="benef">Si tiene beneficiarios: </label>
+                            <div class="col-md-7">
+                                <button type="button" id="beneficiario" class="btn btn-primary">¡Click aquí!</button>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <div class="col-md-5 col-md-offset-3">
+                                <button type="submit" class="btn btn-default">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="../bootstrap/css/Boooooootstrap.css"/>
+   
+</body>
+</html>
